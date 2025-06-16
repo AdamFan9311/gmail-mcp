@@ -1,0 +1,41 @@
+# Gmail 安全 MCP 伺服器依賴
+
+# 核心 MCP 框架
+fastmcp>=2.8.0
+
+# 環境變量管理
+python-dotenv>=1.0.0
+
+# 安全和加密
+cryptography>=41.0.0
+bcrypt>=4.0.1
+PyJWT>=2.8.0
+
+# 速率限制和緩存
+redis>=4.6.0
+slowapi>=0.1.9
+
+# SSL/TLS 支持
+pyOpenSSL>=23.2.0
+certifi>=2023.7.22
+
+# 網路安全標頭
+secure>=0.3.0
+
+# 日誌和監控
+structlog>=23.1.0
+python-json-logger>=2.0.7
+
+# 生產環境 Web 伺服器
+uvicorn[standard]>=0.23.0
+gunicorn>=21.2.0
+
+# 可選：資料庫支持（如果需要持久化）
+# sqlalchemy>=2.0.0
+# psycopg2-binary>=2.9.0
+
+# 開發和測試（可選）
+# pytest>=7.4.0
+# pytest-asyncio>=0.21.0
+# black>=23.7.0
+# flake8>=6.0.0 
