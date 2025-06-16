@@ -1,0 +1,20 @@
+# Gmail Secure MCP Server 環境配置
+# 生產環境使用前請修改所有密鑰和密碼
+
+# JWT 安全密鑰（必須更改！）
+JWT_SECRET_KEY=your-super-secret-jwt-key-change-this-in-production
+
+# 加密密鑰（必須更改！）
+ENCRYPTION_KEY=your-fernet-encryption-key-change-this-in-production
+
+# 管理員密碼哈希（使用 bcrypt 生成）
+# 生成方法：python -c "import bcrypt; print(bcrypt.hashpw(b'your-password', bcrypt.gensalt()).decode())"
+ADMIN_PASSWORD_HASH=$2b$12$example.hash.here.change.this
+
+# 安全設置
+REQUIRE_HTTPS=true
+RATE_LIMIT_PER_HOUR=10
+
+# 可選：自定義端口和主機
+# SERVER_HOST=0.0.0.0
+# SERVER_PORT=8000
